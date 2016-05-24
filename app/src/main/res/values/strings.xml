@@ -2,5 +2,9 @@
     <string name="app_name">FirebaseSample</string>
 
     <string name="hello_world">Hello world!</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_up">SignUp</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
     <string name="action_settings">Settings</string>
 </resources>
