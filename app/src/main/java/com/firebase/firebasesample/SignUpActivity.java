@@ -31,6 +31,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup_main);
 
+        String test = null;
+
         editEmail = (EditText) findViewById(R.id.edit_text_email);
         editPassword = (EditText) findViewById(R.id.edit_text_password);
         btnSignUp = (Button) findViewById(R.id.btn_sign_up);
@@ -107,6 +109,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                                     // signed in user can be handled in the listener.
                                     if (!task.isSuccessful()) {
                                         Toast.makeText(SignUpActivity.this, "Authentication failed.",
+                                                Toast.LENGTH_SHORT).show();
+                                    }else{
+                                        Toast.makeText(SignUpActivity.this, "User Created",
                                                 Toast.LENGTH_SHORT).show();
                                     }
                                 }
